@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-smqb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0031-tenant/tkrw-pr712-0075-0031-app/devfile-sample-smqb@sha256:e3a3fb8b9ee5988dc8ab13f4dc2f73e02b6d22ffd92da1e8f43e83fd96482db4
+        name: my-nodejs
+        resources: {}
+status: {}
